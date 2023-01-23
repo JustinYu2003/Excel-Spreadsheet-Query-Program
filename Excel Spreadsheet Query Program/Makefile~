@@ -1,0 +1,7 @@
+all: server client
+
+server: PPS.c PPS.h
+	gcc -pthread -Wall -g PPS PPS.c
+
+client: PQC.c PQC.h
+	gcc -pthread -Wall -g PQC PQC.c
